@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Genral styles */
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
@@ -16,7 +16,8 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-/*Header*/
+
+/* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -44,10 +45,10 @@ h1 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style-type: none;    
+    list-style-type: none;   
 }
 
-#menu li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -76,18 +77,18 @@ nav {
     display: none;
 }
 
-#nav-toggle-label {
+.nav-toggle-label {
     font-size: 2rem;
 }
 
-/*Main content*/
+/* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
-/*Footer*/
+/* Footer */
 footer {
     background-color: orange;
 }
@@ -121,7 +122,14 @@ footer {
 
     /* Main content */
     main {
-        /*Push main content down to accommodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
 }
