@@ -100,7 +100,7 @@ main {
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(241, 109,107, .7);
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -139,9 +139,11 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
+    
     #menu {
         display: flex;
     }
+    
     #menu > li {
         padding-left: 1rem;
     }
@@ -162,11 +164,39 @@ main {
         margin-top: 79px;
     }
 
-    /* Herro */
+    /* Hero image */
     #cover-text {
         width: 300px;
         right: 50px;
     }
+
+    /* Love runniing reasons */
+
+    #reasons {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #reasons h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 280%;
+    }
+
+    #benefits-physical > div, #benfits-mental > div {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    #benefits {
+        padding: 0 20px;
+    }
+
+    hr {
+        border-top: 1px solid #3a3a3a;
+        margin: 5px 0;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
